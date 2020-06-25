@@ -63,13 +63,13 @@ Issue links :
    
     rake db:create   
     
-**Populate Database:**
-
-    rake db:seed
-    
 **Update Database:**
 
     rake db:migrate    
+    
+**Populate Database:**
+
+    rake db:seed
         
 ## Connecting to Dev Server
 
