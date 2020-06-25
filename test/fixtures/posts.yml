@@ -1,0 +1,14 @@
+valid:
+  title: "Post_1"
+  content: "IRIS Systems"
+  user: user
+
+one:
+  title: "Post_2"
+  content: "IRIS Systems"
+  user: user
+
+two:
+  title: "Post_3"
+  content: "IRIS Systems"
+  user: user

@@ -1,0 +1,5 @@
+user:
+  name: "IRIS Systems"
+  email: "irissystem@iris.nitk.ac.in"
+  #encrypted_password: "$2a$12$nFSm8ja0m5ebRAhdvkK6FOuODhKnUHJPSJyHIWNZT7.vrlVljVlvC"
+  encrypted_password: <%= BCrypt::Password.create("irissystems") %>
