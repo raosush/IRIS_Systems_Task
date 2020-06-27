@@ -1,5 +1,6 @@
 class CommentsController < ApplicationController
   before_action :authenticate_user!
+  before_action :log_activity
   before_action :set_comment, only: %i[show edit update destroy]
   before_action :owner_verification, only: %i[edit update destroy]
 

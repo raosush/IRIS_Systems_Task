@@ -1,5 +1,6 @@
 class PostsController < ApplicationController
   before_action :authenticate_user!
+  before_action :log_activity
   before_action :set_post, only: %i[show edit update destroy]
   before_action :owner_verification, only: %i[edit update destroy]
 
