@@ -40,10 +40,6 @@ This file contains the installation guide for setting up this Rails application 
     rvm use 2.6.1 --default
     gem install bundler
     gem install rails -v 5.2.2
-**Install mysql gem and the libmysqlclient-dev library**
-    
-    sudo apt-get install libmysqlclient-dev
-    gem install mysql2
 **Note: For some of the js gems**
 
     sudo apt install nodejs
