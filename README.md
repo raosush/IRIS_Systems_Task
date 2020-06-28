@@ -32,6 +32,13 @@ This file contains the installation guide for setting up this Rails application 
     \password root
 **Confirm password and run `\q`**
 
+**In case of error, run the following:**
+
+    sudo -u postgres psql
+ *Run this command within psql command line:*
+ 
+    CREATE ROLE root WITH SUPERUSER CREATEDB CREATEROLE LOGIN ENCRYPTED PASSWORD '<password>';
+
 ## Rails Setup
 
 **Rails: 5.2.2 & Ruby:2.6.1**
