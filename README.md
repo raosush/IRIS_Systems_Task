@@ -21,22 +21,16 @@ This file contains the installation guide for setting up this Rails application 
 * Open you terminal, Select Edit from the menu Bar and click on Profile Preferences (Ubuntu 17.04 and before) or Preferences (Ubuntu 18.04 and higher)
 * Open Command tab and tick "Run command as a login shell" and Close
 
-## MySQL Setup
-**You can install MySQL-Server using:**
+## PostgreSQL Setup
+**You can install PostgreSQL using:**
 
-     sudo apt install mysql-server
-     sudo mysql_secure_installation
-
-**Note: After this setup, you should be able to run  MySQL using this command, if not then try some of these issue links**
+     sudo apt install postgresql postgresql-contrib libpq-dev
  
-    mysql -u root -p
+    sudo -u postgres createuser -s root -P
+**Inside postgresql command line run:**
 
-(In case you get the wrong password, do `sudo su`, then `mysql` create new user with password and use that)
-
-Issue links :
- 
-[If you face error 1698](https://stackoverflow.com/questions/39281594/error-1698-28000-access-denied-for-user-rootlocalhost)
-[If you face error 1045](https://stackoverflow.com/questions/21944936/error-1045-28000-access-denied-for-user-rootlocalhost-using-password-y)
+    \password root
+**Confirm password and run `\q`**
 
 ## Rails Setup
 
